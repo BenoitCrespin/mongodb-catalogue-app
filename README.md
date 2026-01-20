@@ -20,10 +20,10 @@ npm install
 
 ### Étape 2 : Configuration
 
-Éditez le fichier `.env` et remplacez `<db_password>` par votre mot de passe MongoDB :
+Éditez le fichier `.env` et renseignez l'URI pour accéder à MongoDB :
 
 ```
-MONGODB_URI=mongodb+srv://dbUser:VOTRE_MOT_DE_PASSE@cluster0.qtxzh.mongodb.net/?appName=Cluster0
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.<region>.mongodb.net/?appName=<app_name>
 PORT=3000
 ```
 
