@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - MongoDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Catalogue de Documents</h1>
+            <p class="subtitle">Connexion à MongoDB Atlas</p>
+        </header>
+
+        <nav class="navigation">
+            <a href="stats.html" class="nav-link">📊 Voir les statistiques</a>
+        </nav>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 Rechercher un titre ou auteur...">
+            <select id="typeSelect">
+                <option value="tous">Tous les types</option>
+            </select>
+            <select id="disponibiliteSelect">
+                <option value="tous">Tous les statuts</option>
+                <option value="disponible">✅ Disponibles</option>
+                <option value="emprunte">📤 Empruntés</option>
+            </select>
+            <select id="sortSelect">
+                <option value="alpha">Tri alphabétique</option>
+                <option value="reservations">Tri par réservations</option>
+            </select>
+            <button id="loadBtn">📚 Charger</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div id="results" class="results-grid"></div>
+        
+        <div id="pagination" class="pagination">
+            <button id="prevBtn" disabled>← Précédent</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn" disabled>Suivant →</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

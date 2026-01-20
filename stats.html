@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques - MongoDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Statistiques du Catalogue</h1>
+            <p class="subtitle">Comparaison des types de documents</p>
+        </header>
+
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">📚 Retour au catalogue</a>
+        </nav>
+
+        <div id="status" class="status"></div>
+
+        <!-- Vue d'ensemble -->
+        <section class="stats-section">
+            <h2>📈 Vue d'ensemble</h2>
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalDocuments">-</div>
+                    <div class="stat-label">Documents au total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalTypes">-</div>
+                    <div class="stat-label">Types différents</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalReservations">-</div>
+                    <div class="stat-label">Réservations totales</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents par type -->
+        <section class="stats-section">
+            <h2>📚 Nombre de documents par type</h2>
+            <div id="typesChart" class="chart-container"></div>
+        </section>
+
+        <!-- Réservations par type -->
+        <section class="stats-section">
+            <h2>⭐ Réservations par type de document</h2>
+            <div id="reservationsChart" class="chart-container"></div>
+        </section>
+
+        <!-- Top auteurs -->
+        <section class="stats-section">
+            <h2>👤 Top 10 des auteurs</h2>
+            <div id="auteursChart" class="chart-container"></div>
+        </section>
+    </div>
+
+    <script src="stats.js"></script>
+</body>
+</html>
