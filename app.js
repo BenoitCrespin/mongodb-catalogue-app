@@ -2,7 +2,7 @@
 // CONFIGURATION API
 // ============================================
 const CONFIG = {
-    apiUrl: 'http://localhost:3000/api',
+    apiUrl: '/api',
     currentPage: 1,
     totalPages: 1,
     itemsPerPage: 9
